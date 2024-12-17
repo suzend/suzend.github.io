@@ -1,0 +1,188 @@
+<html>
+<head>
+  <title>VTAO-BiManip: Masked Visual-Tactile-Action Pre-training with Object Understanding for Bimanual Dexterous Manipulation</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js" type="module"></script>
+</head>
+
+<body> 
+
+<div class="container">
+  <h1><span style="font-size:42px">VTAO-BiManip: Masked Visual-Tactile-Action Pre-training with Object Understanding for Bimanual Dexterous Manipulation</span></h1>
+  <br>
+  <table width="900px" align="center">
+    <br>
+      <td align=center width=180px>
+        <center>
+        <span style="font-size:24px"><a href="https://suzend.github.io">Zhengnan Sun<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://LQTS.github.io/">Qingtao Liu<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=170px>
+        <center>
+          <span style="font-size:24px"><a href="">Jiaying Chen<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=170px>
+        <center>
+          <span style="font-size:24px"><a href="">Zhaotai Shi<sup>1</sup></a></span>
+        </center>
+      </td>
+
+<!--      <td align=center width=160px>-->
+<!--        <center>-->
+<!--        <span style="font-size:24px"><a href="https://lihaoming45.github.io/">Haoming Li<sup>1</sup></a></span>-->
+<!--        </center>-->
+<!--      </td>-->
+  </table>
+  <table width="500px" align="center">
+<!--      <td align=center width=160px>-->
+<!--        <center>-->
+<!--        <span style="font-size:24px"><a href="https://linsats.github.io">Lin Shao<sup>2</sup></a></span>-->
+<!--        </center>-->
+<!--      </td>-->
+      <td align=center width=170px>
+        <center>
+          <span style="font-size:24px"><a href="">Yu Cui<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://person.zju.edu.cn/yeqi">Qi Ye<sup>1&#10013</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="https://person.zju.edu.cn/jmchen">Jiming Chen<sup>1</sup></a></span>
+        </center>
+      </td>
+
+  </table>
+  <br>
+  <table width="800px" align="center">
+    <td align=center width=250px>
+      <center>
+      <span style="font-size: 22px"><sup>1</sup>Zhejiang University</span>
+      </center>
+    </td>
+<!--    <td align=center width=250px>-->
+<!--      <center>-->
+<!--      <span style="font-size: 22px"><sup>2</sup>National University of Singapore</span>-->
+<!--      </center>-->
+<!--    </td>-->
+
+  </table>
+  <br>
+  <table width="700px" align="center">
+    <tr>
+      <td align=center width=50px>
+        <center>
+          <span style="font-size:24px">[Paper]</span>
+        </center>
+      </td>
+<!--      <td align=center width=50px>-->
+<!--        <center>-->
+<!--          <span style="font-size:24px"><a href="https://www.bilibili.com/video/BV1bP411b7jh/?spm_id_from=333.999.0.0">[Video]</a></span>-->
+<!--        </center>-->
+<!--      </td>-->
+<!--      <td align=center width=100px>-->
+<!--        <center>-->
+<!--          <span style="font-size:24px">[Code is coming soon]</span>-->
+<!--        </center>-->
+<!--      </td>-->
+  </table>
+  
+  <p>
+    <div class="row">
+      <img src="resources/examples.jpg" style="width:100%; padding-top:35px;">
+    </div>
+  </p>
+</div>
+
+<!--</br>-->
+
+<div class="container">
+  <h1>Abstract</h1>
+    <p align="justify">
+      Bimanual dexterous manipulation remains significant challenges in robotics due to the high DoFs of each hand and their coordination. 
+      Existing single-hand manipulation techniques often leverage human demonstrations to guide RL methods but fail to generalize to complex bimanual tasks involving multiple sub-skills. 
+      In this paper, we introduce \method, a novel framework that combines visual-tactile-action pretraining with object understanding to facilitate curriculum RL to enable human-like bimanual manipulation.
+      We improve prior learning by incorporating hand motion data, providing more effective guidance for dual-hand coordination than binary tactile feedback. 
+      Our pretraining model predicts future actions as well as object pose and size using masked multimodal inputs, facilitating cross-modal regularization.
+      To address the multi-skill learning challenge, we introduce a two-stage curriculum RL approach to stabilize training.
+      We evaluate our method on a bottle-cap unscrewing task, demonstrating its effectiveness in both simulated and real-world environments. 
+      Our approach achieves a success rate that surpasses existing visual-tactile pretraining methods by over 20%.
+    </p>
+</div>   
+
+<!--</br>-->
+<!--<div class="container">-->
+<!--  <h1>Motivation</h1>-->
+<!--    <p>-->
+<!--      <img src="resources/method.png" style="width:80%; padding-top:0px;">-->
+<!--    </p>-->
+<!--</div>-->
+<!--</br>-->
+<div class="container">
+  <h1>Method</h1>
+  <h2>How to gather VTAO (Vision-Tactile-Action-Object) data <br> during human bimanual manipulation</h2>
+    <p>
+      <img src="resources/VTAO-Capture.jpg" style="width:60%; padding-top:0px;">
+    </p>
+  </br>
+    <h2>How to fuse VTAO information and use it in RL</h2>
+    <p>
+      <img src="resources/pipeline.jpg" style="width:100%; padding-top:0px;">
+    </p>
+</div>
+
+<div class="container">
+  <h1>Experimental Results</h1>
+    <p>
+      <img src="resources/results.jpg" style="width:100%; padding-top:0px;">
+    </p>
+</div>
+</br>
+<!--<div class="container">-->
+<!--  <h1>Video</h1>-->
+<!--&lt;!&ndash;    <iframe src="https://www.bilibili.com/video/BV1bP411b7jh/?spm_id_from=333.999.0.0&vd_source=811a28ecc0ef2e6c74261c8ae4105092" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>&ndash;&gt;-->
+<!--&lt;!&ndash; <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://www.bilibili.com/video/BV1bP411b7jh/?spm_id_from=333.999.0.0&vd_source=811a28ecc0ef2e6c74261c8ae4105092&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false"> </iframe>&ndash;&gt;-->
+<!--<iframe src="https://player.bilibili.com/player.html?aid=318689685&bvid=BV1bP411b7jh&cid=1271612680&p=1" allowfullscreen="allowfullscreen" width="80%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>-->
+<!--&lt;!&ndash;<iframe src="//player.bilibili.com/player.html?aid=318689685&bvid=BV1bP411b7jh&cid=1271612680&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>&ndash;&gt;-->
+<!--</div>-->
+
+<!--</br>-->
+
+<!-- <div class="container">
+  <h1> BibTeX</h1>
+  <table align=center width=1000px height=250px>
+  <tr>
+    <td align=left width=300px><a href=""><img class="layered-paper-big" style="height:180px" src="./resources/Paper_Review.jpg"/></a></td>
+    <td width=700px style="color: #4d4b59; font-size:12pt">
+      <code>
+        @inproceedings{liu2024m2vtp,<br>
+                title={Masked Visual-Tactile Pre-training for Robot Manipulation},<br>
+                author={Liu, Qingtao and Ye, Qi and Sun, Zhengnan and Cui, Yu and Li, Gaofeng  and Chen, Jiming},<br>
+                booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},<br>
+                year={2024},<br>
+                organization={IEEE}<br>
+              }
+      </code>
+    </td>
+  </tr>
+  </table>
+</div> -->
+
+</br>
+
+<div class="containersmall">
+  <p>Contact: <a href="mailto:zn.sun@zju.edu.cn">Zhengnan Sun</a>, <a href="mailto:qi.ye@zju.edu.cn">Qi Ye</a></p>
+  <!-- <p>Page template borrowed from <a href="https://gkioxari.github.io/usl/index.html">gkioxari</a></p> -->
+</div>
+ 
+</body>
+</html>

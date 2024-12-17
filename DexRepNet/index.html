@@ -1,0 +1,161 @@
+<html>
+<head>
+  <title>DexRepNet: Learning Dexterous Robotic Grasping Network with Geometric and Spatial Hand-Object Representation</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js" type="module"></script>
+</head>
+
+<body> 
+
+<div class="container">
+  <h1><span style="font-size:42px">DexRepNet: Learning Dexterous Robotic Grasping Network with Geometric and Spatial Hand-Object Representation</span></h1>
+  <br>
+  <table width="900px" align="center">
+    <br>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://LQTS.github.io/">Qingtao Liu<sup>1</sup>*</a></span>
+        </center>
+      </td>
+      <td align=center width=170px>
+        <center>
+          <span style="font-size:24px"><a href="">Yu Cui<sup>1</sup>*</a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://person.zju.edu.cn/yeqi">Qi Ye<sup>1&#10013</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="">Zhengnan Sun<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="https://lihaoming45.github.io/">Haoming Li<sup>1</sup></a></span>
+        </center>
+      </td>
+  </table>
+  <table width="500px" align="center">
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="https://person.zju.edu.cn/en/gaofengli">Gaofeng Li<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="https://linsats.github.io">Lin Shao<sup>2</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="https://person.zju.edu.cn/jmchen">Jiming Chen<sup>1</sup></a></span>
+        </center>
+      </td>
+
+  </table>
+  <br>
+  <table width="800px" align="center">
+    <td align=center width=250px>
+      <center>
+      <span style="font-size: 22px"><sup>1</sup>Zhejiang University</span>
+      </center>
+    </td>
+    <td align=center width=250px>
+      <center>
+      <span style="font-size: 22px"><sup>2</sup>National University of Singapore</span>
+      </center>
+    </td>
+
+  </table>
+  <br>
+  <table width="700px" align="center">
+    <tr>
+      <td align=center width=50px>
+        <center>
+          <span style="font-size:24px"><a href="https://arxiv.org/abs/2303.09806">[Paper]</a></span>
+        </center>
+      </td>
+      <td align=center width=50px>
+        <center>
+          <span style="font-size:24px"><a href="https://www.bilibili.com/video/BV1bP411b7jh/?spm_id_from=333.999.0.0">[Video]</a></span>
+        </center>
+      </td>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:24px">[Code is coming soon]</span>
+        </center>
+      </td>
+  </table>
+  
+  <p>
+    <div class="row">
+      <img src="resources/examples.png" style="width:80%; padding-top:35px;">
+    </div>
+  </p>
+</div>
+
+</br>
+
+<div class="container">
+  <h1>Abstract</h1>
+    <p align="justify">
+      Robotic dexterous grasping is a challenging prob-lem due to the high degree of freedom (DoF) and complexcontacts of multi-fingered robotic hands. Existing deep re-inforcement learning (DRL) based methods leverage humandemonstrations to reduce sample complexity due to the highdimensional action space with dexterous grasping. However,less attention has been paid to hand-object interaction rep-resentations for high-level generalization. In this paper, wepropose a novel geometric and spatial hand-object interactionrepresentation, named DexRep, to capture dynamic objectshape features and the spatial relations between hands andobjects during grasping. DexRep comprises Occupancy Featurefor rough shapes within sensing range by moving hands, SurfaceFeature for changing hand-object surface distances, and Local-Geo Feature for local geometric surface features most related topotential contacts. Based on the new representation, we proposea dexterous deep reinforcement learning method to learn ageneralizable grasping policy DexRepNet. Experimental resultsshow that our method outperforms baselines using existingrepresentations for robotic grasping dramatically both in graspsuccess rate and convergence speed. It achieves a 93% graspingsuccess rate on seen objects and higher than 80% graspingsuccess rates on diverse objects of unseen categories in bothsimulation and real-world experiments.
+    </p>
+</div>   
+
+</br>
+<div class="container">
+  <h1>Method</h1>
+    <p>
+      <img src="resources/method.png" style="width:80%; padding-top:0px;">
+    </p>
+</div>
+</br>
+<div class="container">
+  <h1>Video</h1>
+<!--    <iframe src="https://www.bilibili.com/video/BV1bP411b7jh/?spm_id_from=333.999.0.0&vd_source=811a28ecc0ef2e6c74261c8ae4105092" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>-->
+<!-- <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://www.bilibili.com/video/BV1bP411b7jh/?spm_id_from=333.999.0.0&vd_source=811a28ecc0ef2e6c74261c8ae4105092&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false"> </iframe>-->
+<iframe src="https://player.bilibili.com/player.html?aid=318689685&bvid=BV1bP411b7jh&cid=1271612680&p=1" allowfullscreen="allowfullscreen" width="80%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+<!--<iframe src="//player.bilibili.com/player.html?aid=318689685&bvid=BV1bP411b7jh&cid=1271612680&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>-->
+</div>
+
+</br>
+
+<div class="container">
+  <h1> BibTeX</h1>
+  <table align=center width=1000px height=250px>
+  <tr>
+    <td align=left width=300px><a href=""><img class="layered-paper-big" style="height:180px" src="./resources/paper_preview.png"/></a></td>
+    <td width=700px style="color: #4d4b59; font-size:12pt">
+      <code>
+<!--             @article{liu2023dexrepnet,<br>
+              title={DexRepNet: Learning Dexterous Robotic Grasping Network with Geometric and Spatial Hand-Object Representations},<br>
+              author={Liu, Qingtao and Cui, Yu and Sun, Zhengnan and Li, Haoming and Li, Gaofeng and Shao, Lin and Chen, Jiming and Ye, Qi},<br>
+              journal={arXiv preprint arXiv:2303.09806},<br>
+              year={2023}<br> -->
+              @inproceedings{liu2023dexrepnet,<br>
+                title={Dexrepnet: Learning dexterous robotic grasping network with geometric and spatial hand-object representations},<br>
+                author={Liu, Qingtao and Cui, Yu and Ye, Qi and Sun, Zhengnan and Li, Haoming and Li, Gaofeng and Shao, Lin and Chen, Jiming},<br>
+                booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br>
+                pages={3153--3160},<br>
+                year={2023},<br>
+                organization={IEEE}<br>
+              }
+      </code>
+    </td>
+  </tr>
+  </table>
+</div>
+
+</br>
+
+<div class="containersmall">
+  <p>Contact: <a href="mailto:l_qingtao@zju.edu.cn">Qingtao Liu</a>, <a href="mailto:qi.ye@zju.edu.cn">Qi Ye</a></p>
+  <!-- <p>Page template borrowed from <a href="https://gkioxari.github.io/usl/index.html">gkioxari</a></p> -->
+</div>
+ 
+</body>
+</html>
