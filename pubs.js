@@ -9,7 +9,7 @@ const PUBLICATIONS = [
     image: "./VTAO-Bimanip/resources/icra25_underreview.png",
     conference: "ICRA 2025 Under Review",
     links: {
-      "project page": "https://suzend.github.io/VTAO-BiManip/",
+      "project page": "https://suzend.github.io/VTAO-Bimanip/",
       arxiv: "",
       paper: "",
       supp: "",
