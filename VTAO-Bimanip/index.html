@@ -107,13 +107,13 @@
 <div class="container">
   <h1>Abstract</h1>
     <p align="justify">
-      Bimanual dexterous manipulation remains significant challenges in robotics due to the high DoFs of each hand and their coordination. 
+      Bimanual dexterous manipulation remains a significant challenge in robotics due to the high DoFs of each hand and their coordination. 
       Existing single-hand manipulation techniques often leverage human demonstrations to guide RL methods but fail to generalize to complex bimanual tasks involving multiple sub-skills. 
-      In this paper, we introduce \method, a novel framework that combines visual-tactile-action pretraining with object understanding to facilitate curriculum RL to enable human-like bimanual manipulation.
-      We improve prior learning by incorporating hand motion data, providing more effective guidance for dual-hand coordination than binary tactile feedback. 
-      Our pretraining model predicts future actions as well as object pose and size using masked multimodal inputs, facilitating cross-modal regularization.
-      To address the multi-skill learning challenge, we introduce a two-stage curriculum RL approach to stabilize training.
-      We evaluate our method on a bottle-cap unscrewing task, demonstrating its effectiveness in both simulated and real-world environments. 
+      In this paper, we propose VTAO-BiManip, a novel framework that integrates visual-tactile-action pre-training with object understanding, aiming to enable human-like bimanual manipulation via curriculum RL. 
+      We improve prior learning by incorporating hand motion data, providing more effective guidance for dual-hand coordination. 
+      Our pretraining model predicts future actions as well as object pose and size using masked multimodal inputs, facilitating cross-modal regularization. 
+      To address the multi-skill learning challenge, we introduce a two-stage curriculum RL approach to stabilize training. 
+      We evaluate our method on a bimanual bottle-cap twisting task, demonstrating its effectiveness in both simulated and real-world environments. 
       Our approach achieves a success rate that surpasses existing visual-tactile pretraining methods by over 20%.
     </p>
 </div>   
