@@ -5,12 +5,12 @@ const PUBLICATIONS = [
     title:
       "VTAO-BiManip: Masked Visual-Tactile-Action Pre-training with Object Understanding for Bimanual Dexterous Manipulation",
     authors:
-      "Zhengnan Sun, Qingtao Liu, Zhaotai Shi, Jiayin Chen, Yu Cui, Qi Ye, Jiming Chen",
+      "Zhengnan Sun, Zhaotai Shi, Jiayin Chen, Qingtao Liu, Yu Cui, Jiming Chen, Qi Ye",
     image: "./VTAO-Bimanip/resources/icra25_underreview.png",
-    conference: "ICRA 2025 Under Review",
+    conference: "IROS 2025",
     links: {
       "project page": "https://suzend.github.io/VTAO-Bimanip/",
-      arxiv: "",
+      arxiv: "https://arxiv.org/abs/2501.03606",
       paper: "",
       supp: "",
       video: "",
